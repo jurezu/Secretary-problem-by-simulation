@@ -19,7 +19,7 @@ The following logic is used:
 
 ## Getting started
 
-* install python 3 distribution
+* install python 3 ([Python](https://www.python.org/downloads/), [Anaconda distribution](https://www.anaconda.com/distribution/#download-section))
 * install libraries from requirements.txt via pip
 ```
 pip install -r requirements.txt
