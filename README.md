@@ -2,16 +2,19 @@
 
 Secretary problem which is also known as the marriage problem, the sultan's dowry problem, the fussy suitor problem, the googol game, and the best choice problem.
 
-
 More about problem on [wikipedia](https://en.wikipedia.org/wiki/Secretary_problem).
 
-This program is running arbitrary number of simulations provided by the user.
-Furthermore, number of candidates can be passed as a parameter(default=100).
+
+The program is running arbitrary number of simulations provided by the user.
+It will find optimal threshold R and average score of finding the best candidate among the list of candidates.
+Also, number of candidates can be passed as a parameter. Default value is 100.
 
 The following logic is used:
 
 * Reject the first R candidates.
 * Then hire the first one you see that is better than the best among the first R.
+
+
 
 
 ## Getting started
