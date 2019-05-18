@@ -10,14 +10,13 @@ Finding optimal threshold R for Secretary problem by running simulations in pyth
 ## Getting started
 
 * install python 3 distribution
-* install libraries from requirements.txt with pip or anaconda
-
+* install libraries from requirements.txt with pip
 ```
 pip install -r requirements.txt
 ```
-or
+* or create anaconda environment by running 
 ```
-conda install --file requirements.txt
+conda env create -f environment.yml
 ```
 
 
