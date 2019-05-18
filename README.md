@@ -5,7 +5,14 @@ Secretary problem which is also known as the marriage problem, the sultan's dowr
 
 More about problem on [wikipedia](https://en.wikipedia.org/wiki/Secretary_problem).
 
-Finding optimal threshold R for Secretary problem by running simulations in python.
+This program is running arbitrary number of simulations provided by the user.
+Furthermore, number of candidates can be passed as a parameter(default=100).
+
+The following logic is used:
+
+* Reject the first R candidates.
+* Then hire the first one you see that is better than the best among the first R.
+
 
 ## Getting started
 
@@ -24,5 +31,5 @@ conda env create -f environment.yml
 ## Running the code
 
 ```
-python simulation.py
+python simulation.py <number of candidates>
 ```
