@@ -7,7 +7,22 @@ More about problem on [wikipedia](https://en.wikipedia.org/wiki/Secretary_proble
 
 Finding optimal threshold R for Secretary problem by running simulations in python.
 
-## Quickstart
+## Getting started
+
+* install python 3 distribution
+* install libraries from requirements.txt with pip or anaconda
+
+```
+pip install -r requirements.txt
+```
+or
+```
+conda install --file requirements.txt
+```
+
+
+
+## Running the code
 
 ```
 python simulation.py
