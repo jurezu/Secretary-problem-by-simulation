@@ -1,6 +1,6 @@
 import numpy as np
 from tqdm import tqdm
-NUMBER_OF_CANDIDATES = 100
+import sys
 
 
 def calculate_precision_percentage(data):
@@ -73,10 +73,21 @@ def simulate(R):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        try:
+            NUMBER_OF_CANDIDATES = int(sys.argv[1])
+        except ValueError:
+            print(
+                "Argument passed is not an integer. Taking 100 as a default!")
+            NUMBER_OF_CANDIDATES = 100
+    else:
+        NUMBER_OF_CANDIDATES = 100
+
     number_of_simulations = get_number_of_simulations()
     data = {}
     for iteration in tqdm(range(number_of_simulations)):
-        # 0-99, 100 maskes no sesne since non of candidates will be choosen
+        # 0-NUMBER_OF_CANDIDATES
+        # max number maskes no sesne since non of candidates will be choosen
         example_R = iteration % NUMBER_OF_CANDIDATES
         result = simulate(example_R)
         if example_R in data:
